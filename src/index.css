@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.feature-box:hover .read-more-link {
+  color: white !important;
+}
+
+
+
+
+
+    .animate-fade-in {
+        animation: fadeIn 0.9s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .animate-slide-in-down {
+        animation: slideInDown 0.9s ease-in-out;
+    }
+
+    .animate-slide-in-up {
+      animation: slideInUp 0.9s ease-in-out;
+  }
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
